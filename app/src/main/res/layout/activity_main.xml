@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="374dp"
+        android:layout_height="436dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/fondo1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su clave"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/spPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="413dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesion" />
+
+            <Button
+                android:id="@+id/btnEliminarCta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar cuenta" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btn_recuperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="olvide contraseña" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnRegistrarnuevo"
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:text="NO TENGO CUENTA" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="389dp"
+            android:layout_height="43dp" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

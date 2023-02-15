@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Registro de Usuario" />
+
+        <EditText
+            android:id="@+id/etCorreonuevo"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="10pt"
+            android:hint="Email@"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etClavenuevo"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginVertical="10pt"
+            android:hint="passs****"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnRegistrarnuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR" />
+
+        <TextView
+            android:id="@+id/alreadyHaveAccount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Ya tiene una Cuenta?" />
+
+        <Button
+            android:id="@+id/btnRegresarnuevo"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            android:text="Regresar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".producto">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="497dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50pt"
+            android:text="Registro Productos"
+            android:textSize="20pt" />
+
+        <EditText
+            android:id="@+id/etcodigoProducto"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:hint="Código del Producto"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etnombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginVertical="5pt"
+            android:hint="Nombre del Producto"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etStockProducto"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginVertical="5pt"
+            android:hint="Stock del Producto"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etPrecioCosto"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:hint="Precio costo del Producto"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etPrecioVenta"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            android:hint="Precio venta del Producto"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="317dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="guardar" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="actualizar" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="364dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="borrar" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

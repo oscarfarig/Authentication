@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Authentication</string>
+    <string name="sign_out">Sign out</string>
+    <string name="revocar">Revocar</string>
+    <string name="invalid_mail">Ingrese mail valido</string>
+    <string name="invalid_password">Ingrese un password mayor a 6 digitos</string>
+    <string name="facebook_app_id">692782455825289</string>
+    <string name="fb_login_protocol_scheme">fb692782455825289</string>
+    <string name="facebook_client_token">16d1c398f0e9f9f46111c1a216344ea9</string>
+</resources>

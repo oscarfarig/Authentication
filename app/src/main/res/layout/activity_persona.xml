@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB13B"
+    tools:context=".Persona">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Ingrese  cedula /pasaporte"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:ems="10"
+            android:hint="Ingrese nombres y apellidos"
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="98dp">
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+
+                android:text="Masculino" />
+
+            <RadioButton
+
+                android:id="@+id/rbFemenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:text="Femenino" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnPais"
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+        <EditText
+            android:id="@+id/etProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:hint=" Mi província"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="15pt"
+            android:layout_marginTop="5pt"
+            android:hint="oscarf@gmail.com"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="15pt"
+            android:layout_marginTop="5pt"
+            android:hint="id"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnguargar"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="guardar" />
+
+                <Button
+                    android:id="@+id/btnActualizar"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="actualizar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnborrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="borrar" />
+
+                <Button
+                    android:id="@+id/btnbuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="buscar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnSalir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="regresar" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
